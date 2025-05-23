@@ -8,7 +8,7 @@ Some example use cases include hosting a Minecraft server for members of a patro
 
 For a user to gain access to the server, they simply need to use the `/verify {username}` Discord command with their Minecraft username. Each Discord user can only have one Minecraft account.
 
-DiscordVerifier is a purely server-side mod, so no changes to the Vanilla client will be necessary to join a server running DiscordVerifier.
+DiscordVerifier is a purely server-side mod, so no changes to the Vanilla client will be necessary to join a server running DiscordVerifier. Installing it on the client is unsupported and may cause data loss.
 
 ## Setup
 
