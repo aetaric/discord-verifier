@@ -47,20 +47,3 @@ jobs:
       - name: Build
         run: ./gradlew clean build
 
-      - name: Publish (CurseForge/Modrinth/GitHub)
-        uses: Kir-Antipov/mc-publish@v3.3
-        with:
-          curseforge-id: 1088831
-          curseforge-token: "${{env.CURSEFORGE_TOKEN}}"
-
-          modrinth-id: CjGsjuQx
-          modrinth-token: "${{env.MODRINTH_TOKEN}}"
-
-          name: "${{env.RELEASE_NAME}}"
-          version: "${{ github.event.inputs.mod_version }}"
-          version-type: release
-
-          changelog-file: "CHANGELOG.md"
-
-          loaders: fabric
-          java: "${{env.JAVA_VERSION}}"
