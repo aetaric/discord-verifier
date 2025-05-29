@@ -66,6 +66,6 @@ class DiscordBot {
 
         DiscordVerifier.LOGGER.trace("Handled verification of user {}", event.getInteraction().getUser().getUsername());
         // Send the reply back to the user who sent the command
-        return event.reply(reply.toString());
+        return event.reply(reply.toString()).withEphemeral(true);
     }
 }
